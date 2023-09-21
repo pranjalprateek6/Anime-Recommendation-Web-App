@@ -1,33 +1,33 @@
-# Anime-Recommendation-Web-App
-This web application recommends similar anime based on user input. It utilizes a cosine similarity matrix created from an IMDb anime dataset to find anime with similar genres.
-Getting Started
-These instructions will help you set up and run the application on your local machine.
+# Anime Recommendation Web App
 
-Open a terminal or command prompt and navigate to the project directory.
+Welcome to the Anime Recommendation Web App repository! This project uses a cosine similarity matrix to provide anime recommendations based on user preferences. It is powered by Streamlit and utilizes the "imdb_anime.csv" dataset.
 
-Install the required Python packages using pip:
+## Overview
 
-Copy code
-```pip install streamlit pandas scikit-learn```
+This web application recommends anime based on user preferences and interactions. It employs a cosine similarity matrix to find anime titles that are similar to the ones the user enjoys. The app offers a user-friendly interface for discovering new anime series and movies.
 
-# Usage
-In the project directory, place the imdb_anime.csv dataset file.
+## Features
 
-Run the Streamlit app by executing the following command:
+- Anime recommendation based on user input.
+- Interactive user interface for an enjoyable experience.
+- Utilizes a cosine similarity matrix for accurate recommendations.
+- Uses the "imdb_anime.csv" dataset to provide anime information.
+  
+# Run the Streamlit app using the following command:
 
-Copy code
 ```streamlit run app.py```
 
-The web application will open in your default web browser.
+## Dependencies
+The following Python libraries are used in this project:
 
-Enter the name of an anime you like in the text input field and click the "Get Recommendations" button.
+Streamlit
+Pandas
+Scikit-learn
+NumPy
 
-The application will display a list of recommended anime based on similarity to your input.
+#You can install these dependencies using pip:
 
-#Customization
-You can customize the behavior and appearance of the application by modifying the app.py file. For example, you can change the default anime in the text input field, adjust the number of recommended anime to display, or apply CSS styling to the app.
+```pip install streamlit pandas scikit-learn numpy```
 
-Built With
-Streamlit - The web framework used for building the user interface.
-Pandas - For data manipulation and analysis.
-scikit-learn - For creating TF-IDF vectors and computing cosine similarity.
+# Dataset
+The dataset used for this project is [https://www.kaggle.com/datasets/lorentzyeung/all-japanese-anime-titles-in-imdb] It contains information about various anime series and movies, including titles, genres, and ratings.
